@@ -22,10 +22,9 @@ export const Statistics = ({
 Statistics.propTypes = {
   countTotalFeedback: PropTypes.func.isRequired,
   countPositiveFeedbackPercentage: PropTypes.func.isRequired,
-  state: 
-      PropTypes.shape({
-        good: PropTypes.number.isRequired,
-        neutral: PropTypes.number.isRequired,
-        bad: PropTypes.number.isRequired,
-      }).isRequired
+  state: PropTypes.shape({
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+  }).isRequired,
 };
