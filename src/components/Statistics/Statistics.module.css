@@ -1,0 +1,21 @@
+.container {
+    background-color: #fff;
+    margin: 100px auto auto;
+    padding: 10px 20px;
+    width: 800px;
+    margin-top: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(5, 3, 19, 0.973);
+}
+
+.text {
+    
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(9, 6, 10, 0.973);
+}
