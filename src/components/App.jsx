@@ -10,7 +10,6 @@ export class App extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    visible: false,
   };
 
   onLeaveFeedback = evt => {
@@ -48,8 +47,7 @@ export class App extends Component {
           onLeaveFeedback={this.onLeaveFeedback}
         />
         <SectionTitle />
-        
-        {this.state.visible ? (
+        {this.countTotalFeedback() ? (
           <Statistics
             state={this.state}
             countTotalFeedback={this.countTotalFeedback}
@@ -57,7 +55,9 @@ export class App extends Component {
               this.countPositiveFeedbackPercentage
             }
           />
-        ) : <Notification />}
+        ) : (
+          <Notification />
+        )}
       </>
     );
   }
