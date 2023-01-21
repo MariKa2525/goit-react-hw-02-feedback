@@ -13,15 +13,10 @@ export class App extends Component {
   };
 
   onLeaveFeedback = evt => {
-    this.showStatistics();
     const name = evt.target.name;
     this.setState(prevState => {
       return { [name]: (prevState[name] += 1) };
     });
-  };
-
-  showStatistics = () => {
-    this.setState({ visible: true });
   };
 
   countTotalFeedback = () => {
